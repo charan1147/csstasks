@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/task1/surey.css">
+  
+    
+</head>
+<body>
+    <div class="survey-container">
+        <form>
+           
+            <label for="name">Name <span class="asterisk">*</span></label>
+            <div class="name-field">
+                <div>
+                <input type="text" id="first-name" name="first-name" placeholder="First" required><br>
+                <label class="Name">First</label>
+            </div>
+             <div>
+                <input type="text" id="last-name" name="last-name" placeholder="Last" required><br>
+                <label class="Name">Last</label>
+            </div>
+        </div>
+            <label for="email">Email <span class="asterisk">*</span></label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required> <br>
+            <br>    
+            
+            <label >Your Experience <span class="asterisk">*</span></label>
+            <div class="rating" >
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+            <p>Overall, how would you rate your experience with us?</p>
+            
+            <div class="rating-survey">
+                <label >How satisfied are you with <span class="asterisk">*</span></label>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Very Unsatisfied</th>
+                        <th>Unsatisfied</th>
+                        <th>Neutral</th>
+                        <th>Satisfied</th>
+                        <th>Very Satisfied</th>
+                    </tr>
+                    <tr>
+                        <td>Purchase</td>
+                        <td><input type="radio" name="purchase" value="1"></td>
+                        <td><input type="radio" name="purchase" value="2"></td>
+                        <td><input type="radio" name="purchase" value="3"></td>
+                        <td><input type="radio" name="purchase" value="4"></td>
+                        <td><input type="radio" name="purchase" value="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Service</td>
+                        <td><input type="radio" name="service" value="1"></td>
+                        <td><input type="radio" name="service" value="2"></td>
+                        <td><input type="radio" name="service" value="3"></td>
+                        <td><input type="radio" name="service" value="4"></td>
+                        <td><input type="radio" name="service" value="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Company Overall</td>
+                        <td><input type="radio" name="company" value="1"></td>
+                        <td><input type="radio" name="company" value="2"></td>
+                        <td><input type="radio" name="company" value="3"></td>
+                        <td><input type="radio" name="company" value="4"></td>
+                        <td><input type="radio" name="company" value="5"></td>
+                    </tr>
+                </table>
+            </div><br>
+        
+            <div class="rating-survey">
+                <label>How Likely Are You to <span class="asterisk">*</span></label>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Very Unlikely</th>
+                        <th>Unlikely</th>
+                        <th>Neutral</th>
+                        <th>Likely</th>
+                        <th>Very Likely</th>
+                    </tr>
+                    <tr>
+                        <td>Buy from us again</td>
+                        <td><input type="radio" name="buy-again" value="1"></td>
+                        <td><input type="radio" name="buy-again" value="2"></td>
+                        <td><input type="radio" name="buy-again" value="3"></td>
+                        <td><input type="radio" name="buy-again" value="4"></td>
+                        <td><input type="radio" name="buy-again" value="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Recommend our product to others</td>
+                        <td><input type="radio" name="recommend-product" value="1"></td>
+                        <td><input type="radio" name="recommend-product" value="2"></td>
+                        <td><input type="radio" name="recommend-product" value="3"></td>
+                        <td><input type="radio" name="recommend-product" value="4"></td>
+                        <td><input type="radio" name="recommend-product" value="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Recommend our company to others</td>
+                        <td><input type="radio" name="recommend-company" value="1"></td>
+                        <td><input type="radio" name="recommend-company" value="2"></td>
+                        <td><input type="radio" name="recommend-company" value="3"></td>
+                        <td><input type="radio" name="recommend-company" value="4"></td>
+                        <td><input type="radio" name="recommend-company" value="5"></td>
+                    </tr>
+                </table>
+            </div><br>
+            
+            <label for="comments">Additional comments or suggestions</label><br>
+            <textarea id="comments" name="comments"></textarea><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
